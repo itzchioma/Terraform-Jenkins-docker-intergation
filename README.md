@@ -28,20 +28,20 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
 
-- Step 1:- Install Terraform plugin
+#### Step 1:- Install Terraform plugin
 - Create an ec2 instance from AWS console.
 - ssh into the ec2 instance and configure Jenkins
 - In order to integrate Jenkins with Terraform, we need to install the Terraform plugin in Jenkins.
 - Go to Manage Jenkins -> Manage Plugins -> Search “Terraform Plugin” -> Click on Install -> Restart the Jenkins
 
-- Step 2:- Configure the Terraform plugin
+#### Step 2:- Configure the Terraform plugin
 - Go to Manage Jenkins -> Global Tool Configuration -> Search for “Terraform” -> Add Path of the Terraform.
 
-- Step 4:- Install Multibranch pipeline plugin
+#### Step 3:- Install Multibranch pipeline plugin
 - For this project, we will create the multibranch pipeline. In order to create that we need to install a Multibranch pipeline
 - Go to Manage Jenkins -> Manage Plugins -> Search “Pipeline: Multibranch” -> Install the plugin -> Restart the Jenkins
   
-- Step 5:- Create the Multibranch pipeline
+#### Step 4:- Create the Multibranch pipeline
 - Click on New Item -> Click on Multibranch Pipeline -> Click on OK
 - Now we need to configure the project
 - Go to Branch sources -> Click on Git -> Add the repository URL
