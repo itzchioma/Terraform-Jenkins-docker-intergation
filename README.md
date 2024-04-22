@@ -28,6 +28,10 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
 
+#### Prerequisite on jenkins
+##### Jenkins Plugin to configure 
+- AWS Credentials
+
 #### Step 1:- Install Terraform plugin
 - Create an ec2 instance from AWS console.
 - ssh into the ec2 instance and configure Jenkins
